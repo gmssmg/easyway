@@ -1,0 +1,37 @@
+server:
+  port: 8080
+
+spring:
+  datasource:
+    driver-class-name: org.h2.Driver
+    url: jdbc:h2:mem:EASYWAY;Mode=MYSQL;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=FALSE
+    platform: h2
+    initialize: true
+    username: easyway
+    password: safra
+  jpa:
+    database-platform: org.hibernate.dialect.H2Dialect
+    generate-ddl: true
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.H2Dialect
+        format_sql: true
+        show_sql: true
+        generate_statistics: true
+  h2:
+    console:
+      enabled: true
+      path: /h2-console
+
+api:
+    client:
+        id: f9d3cd9600874ac2803d03ca709b78eb
+        secret: 1a2075e3-b15e-4324-902c-0f12f8f08082
+
+safra:
+  token:
+    uri: https://idcs-902a944ff6854c5fbe94750e48d66be5.identity.oraclecloud.com/oauth2/v1/token
+  optin:
+    uri: https://af3tqle6wgdocsdirzlfrq7w5m.apigateway.sa-saopaulo-1.oci.customer-oci.com/fiap-sandbox/accounts/v1/optin

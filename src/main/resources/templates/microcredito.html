@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Safra Easyway - Microcrédito</title>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<meta name="description" content="" />
+	<meta name="keywords" content="" />
+	<!--[if lte IE 8]><script src="js/html5shiv.js"></script><![endif]-->
+	<script src="/js/jquery.min.js"></script>
+	<script src="/js/skel.min.js"></script>
+	<script src="/js/skel-layers.min.js"></script>
+	<script src="/js/init.js"></script>
+	<script src="/js/controller.js"></script>
+	<script src="/js/maskmoney.js"></script>
+	<script src="/js/jquery.mask.js"></script>
+
+	<noscript>
+		<link rel="stylesheet" href="/css/skel.css" />
+		<link rel="stylesheet" href="/css/style.css" />
+		<link rel="stylesheet" href="/css/style-xlarge.css" />
+	</noscript>
+</head>
+
+<body class="landing">
+
+	<!-- Header -->
+	<header id="header">		
+		<nav id="nav">
+			<ul>
+				<li><a href="/">Home</a></li>				
+				<li><a href="/microcredito">Microcrédito</a></li>
+				<li><a href="#">Benefícios (Em breve)</a></li>
+				<li><a href="#">Investimentos (Em breve)</a></li>
+				<li><a href="#">Safra Club(Em breve)</a></li>				
+			</ul>
+		</nav>
+	</header>
+
+	<!-- Banner -->
+	<section id="banner">		
+		<h2>Microcrédito</h2>
+			<p>O microcrédito foi criado para você, micro ou pequeno empreendedor, a alavancar o seu negócio!</p> 
+			<p>Microcrédito é um empréstimo em menor valor (até R$ 21.000,00) direcionado a um público restrito, principalmente pequenos empresários ou autônomos de baixa renda que normalmente não possuem acessa a outras formas de crédito.</p>
+			<p>Para solicitá-lo você deve ser maior de 18 anos, ser pessoa jurídica, MEI ou autônomo. A aprovação se dá mediante a análise socioeconômica de sua condição financeira em relação ao valor solicitado.</p>		
+	</section>
+
+	<!--  -->
+	<section id="one" class="wrapper style1 special">
+		<div class="container">
+			<header class="major">
+				<h2>Simule um microcrédito conosco:</h2>
+				<p>Taxa a partir de 1,99% até 4,00% a.m.</p>
+			</header>
+			<div class="row 150% align-center-justify">
+				<div class="4u 12u$(medium)">
+					<section class="box">
+						<h3>Microcrédito</h3>
+						<p>Insira um valor para realizar seu sonho:</p>
+						<input name="simulate" id="simulate" value="" placeholder="Insira o valor" type="text" data-affixes-stay="true" data-prefix="R$ " data-thousands="." data-decimal=",">
+						<button id="send" class="button mt-2">Simular</button>
+					</section>
+					<label id="label-value">Para o valor de <strong id="value-input-user"></strong> você terá 12 parcelas de <strong id="value-available">R$...</strong></label>
+					<label id="label-alert">O valor informado é maior que R$ 21.000,00.</label>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!--  -->
+	<section id="two" class="wrapper style2 special">
+		<div class="container">
+			<header class="major">
+				<h2>Ficou interessado? Preencha abaixo com os seus dados e dê continuidade no processo do microcrédito:</h2>				
+			</header>
+		</div>
+		<div id="message-ok" class="message-success">						
+		</div>
+		<div class="container 50%">
+			<form>
+				<div class="row uniform">
+					<div class="6u 12u$(small)">
+						<input name="name" id="name" value="" placeholder="Nome" type="text">
+					</div>
+					<div class="6u 12u$(small)">
+						<input name="cpf" id="cpf" value="" placeholder="CPF" type="text">
+					</div>
+					<div class="6u 12u$(small)">
+						<input name="email" id="email" value="" placeholder="E-mail" type="text">
+					</div>
+					<div class="6u$ 12u$(small)">
+						<input name="phone" id="phone" value="" placeholder="(xx) xxxxx-xxxx" type="text">
+					</div>										
+					<div class="12u$">
+						<textarea name="amount" id="amount" placeholder="Insira o valor que gostaria de ter de emprestimo" rows="1"></textarea>
+					</div>
+					<div class="12u$">
+						<ul class="actions">
+							<li><input value="Cadastrar" class="special big" type="button" id="send-server"></li>
+						</ul>
+					</div>
+				</div>
+			</form>
+		</div>
+	</section>	
+
+	<!-- Footer -->
+	<footer id="footer">
+		<div class="container">			
+			<div class="row">
+				<div class="8u 12u$(medium)">
+					<ul class="copyright">
+						<li>&copy; Safra Easyway. All rights reserved.</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+</body>
+<script type="text/javascript">
+	window.controller = new controller();
+	window.controller.load();
+</script>
+
+</html>
